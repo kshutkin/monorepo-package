@@ -147,7 +147,8 @@ export default [{
         format: 'cjs',
         dir: dest,
         entryFileNames: '[name].cjs',
-        chunkFileNames: '[name].cjs'
+        chunkFileNames: '[name].cjs',
+        exports: 'auto'
     },
 
 	plugins: [preprocess({ include: [ 'src/index.ts' ], context: { cjs: true } }), ...plugins],
