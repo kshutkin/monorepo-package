@@ -119,8 +119,6 @@ if (umdFilter('index')) {
     }
 }
 
-const globalName = camelCase(pkg.name);
-
 const plugins = [
     resolve(),
     commonjs(),
