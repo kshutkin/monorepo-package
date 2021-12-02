@@ -16,7 +16,10 @@ const twoPartsFilenameTest = /(.*)\.(.*)/g;
 
 const dest = 'dist';
 
-const umdFilter = () => false;
+const umdFilter = (filename) => {
+    const id = path.basename(filename, '.ts');
+    return ['index'].includes(id);
+}
 
 if (typeof pkg.name !== 'string') {
     console.error(`expecting name to be a string in package.json`);
