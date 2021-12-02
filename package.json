@@ -22,8 +22,7 @@
   "unpkg": "./dist/index.umd.js",
   "files": [
     "dist",
-    "core",
-    "spinners"
+    "core"
   ],
   "engines": {
     "node": ">=15"
