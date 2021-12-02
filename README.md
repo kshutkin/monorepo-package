@@ -24,4 +24,6 @@ npx degit kshutkin/monorepo-package folder-name
 
 Where folder-name should be replaced with desired folder name.
 
+After cloning please add it to the parent package.json in packages in the correct position.
+
 Root seed: [monorepo-root](https://github.com/kshutkin/monorepo-root).
