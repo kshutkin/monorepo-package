@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import camelCase from 'lodash/camelCase';
+import isBuiltinModule from 'is-builtin-module';
 
 import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
@@ -125,7 +126,7 @@ const plugins = [
     typescript()
 ];
 
-const external = (id) => id.indexOf('node_modules') >= 0 || id.indexOf('@niceties') >= 0;
+const external = (id) => id.indexOf('node_modules') >= 0 || id.indexOf('@niceties') >= 0 || isBuiltinModule(id);
 
 export default [{
 	input,
