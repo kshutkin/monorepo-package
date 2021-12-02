@@ -8,15 +8,15 @@
   "type": "module",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "default": "./dist/index.mjs"
     },
     "./core": {
-      "require": "./dist/core.js",
+      "require": "./dist/core.cjs",
       "default": "./dist/core.mjs"
     }
   },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "typings": "./dist/index.d.ts",
   "unpkg": "./dist/index.umd.js",
