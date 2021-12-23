@@ -35,6 +35,8 @@
     "url": "https://github.com/kshutkin/monorepo-package/issues"
   },
   "homepage": "https://github.com/kshutkin/monorepo-package/README.md",
+  "readme": "README.md",
+  "description": "",
   "scripts": {
     "build": "rimraf ./dist && rollup -c",
     "dev": "rimraf ./dist && rollup -c -w",
